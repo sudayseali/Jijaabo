@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Task Earn Somali",
+    "slug": "task-earn-somali",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/taskearnsomali_icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/taskearnsomali_icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sudayse.taskearnsomali"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/taskearnsomali_icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sudayse.taskearnsomali"
+    },
+    "web": {
+      "favicon": "./assets/taskearnsomali_icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "halkan-waxaa-iman-doona-id-gaaga"
+      }
+    }
+  }
+}
