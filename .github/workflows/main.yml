@@ -1,0 +1,44 @@
+name: TaskEarnSomali
+on:
+  push:
+    branches:
+      - main   # ama branch-ka aad rabto
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout project-ka GitHub
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      # 3️⃣ Install dependencies
+      - name: Install npm packages
+        run: npm install
+
+      # 4️⃣ Install EAS CLI
+      - name: Install Expo EAS CLI
+        run: npm install -g eas-cli
+
+      # 5️⃣ Login EAS (waa inaad hore token ku abuurtay)
+      - name: Login to Expo
+        run: eas login --token ${{ secrets.EXPO_TOKEN }}
+
+      # 6️⃣ Build APK
+      - name: Build APK
+        run: eas build --platform android --non-interactive
+
+      # 7️⃣ Upload APK as artifact
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: android-apk
+          path: |
+            ./android/app/build/outputs/apk/debug/*.apk
