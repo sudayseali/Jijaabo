@@ -1,4 +1,4 @@
-# 📱 TaskEarnSomali – Reward & Earning App  
+```# 📱 TaskEarnSomali – Reward & Earning App  
 **App ku siinaya lacag adigoo qabanaya tasks sida video watching, surveys, offerwalls, app downloads, iyo shaqooyin kale oo mustaqbalka lagu dari karo adoon codeka wax ka beddelin.**
 
 ---
@@ -197,4 +197,4 @@ Mashruucan waxaa loo dhisay si uu u noqdo:
 
 ## ❤️ Thanks  
 Waxaad sameyn doontaa app EARNING real ah.  
-Wax kasta oo kaa maqan waxaan kuu diyaarin doonaa.
+Wax kasta oo kaa maqan waxaan kuu diyaarin doonaa.```
